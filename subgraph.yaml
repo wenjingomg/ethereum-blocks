@@ -6,7 +6,7 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: rinkeby
+    network: mainnet
     source:
       address: "0xb0b670fc1F7724119963018DB0BfA86aDb22d941"
       abi: Factory
@@ -15,7 +15,7 @@ dataSources:
       apiVersion: 0.0.3
       language: wasm/assemblyscript
       entities:
-        - ConverterAddition
+        - Block
       abis:
         - name: Factory
           file: ./abis/factory.json
